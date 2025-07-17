@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <h1 class="none"><b>HTML All Tags Examples</b></h1>
+    <nav>
+        <a href="#text">Text</a> | <a href="#lists">Lists</a> | <a href="#links">Links</a> | <a href="#forms">Forms</a> | <a href="#media">Media</a> | <a href="#tables">Tables</a> | <a href="#semantic">Semantic</a>
+    </nav>
+    <div id="text">
+        <h1><b> Text Formatting Tags </b></h1>
+        <p>This is a <b>Strong</b> and <em>emphasized</em> text.</p>
+        <p>Use <b>bold,</b><i>italic,</i><u>underline,</u>and <mark>mark.</mark></p>
+        <p>Here is <code style="background-color:lightgray;">inline code</code> and <strike>strikethrough.</strike></p>
+        <p>This is a <small>small</small> and <sub>subscript</sub>/<sup>superscript.</sup></p>
+        <center>
+            <p>This is a blockquote example.</p>
+            <blockquote>Preformatted</blockquote>
+            <blockquote>text example</blockquote>
+        </center>
+        <p><abbr style="text-decoration: underline dotted;">WHO</abbr>is an abbreviation</p>
+    </div>
+    <div id="lists">
+        <h1><b>Lists</b></h1>
+        <ul>
+            <li>Unordered item 1</li>
+            <li>Unordered item 2</li>
+        </ul>
+        <ol>
+            <li>Ordered item 1</li>
+            <li>Ordered item 2</li>
+        </ol>
+        <dl>
+            <dt>HTML</dt>
+            <dl>Hyper Text Markup Language</dl>
+        </dl>
+    </div>
+    <div id="links">
+        <h1><b>Links and Anchors</b></h1>
+        <p>Visit<a href="www.google.com">Example.com</a></p>
+    </div>
+    <div id="forms">
+        <h1><b>Forms and Inputs</b></h1>
+        <form action="">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="Name:"><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="Email:"><br>
+            <label for="password">Password:</label>
+            <input type="password" name="Password:" id="password"><br>
+            <label for="gen">Gender:</label>
+            <input type="radio" name="Gender:" id="gen">Male
+            <input type="radio" name="Gender:" id="gen">Female<br>
+            <label for="hob">Hobbies:</label>
+            <input type="checkbox" name="Hobbies" id="hob">Reading
+            <input type="checkbox" name="Hobbies" id="hob">Coding<br>
+            <label for="color">Favorite color:</label>
+            <input type="color" name="Favorite color:" id="color"><br>
+            <label for="dob">D.O.B</label>
+            <input type="date" name="D.O.B" id="dob"><br>
+            <label for="file">Upload File:</label>
+            <input type="file" name="Upload File:" id="file"><br>
+            <label for="cou">Country:</label>
+            <select name="Country" id="cou">
+                <option value="INDIA">INDIA</option>
+                <option value="USA">USA</option>
+            </select><br>
+            <textarea name="comment" id="comment" cols="50" rows="4">Type here...</textarea>
+            <button>Sumbit</button><button>Reset</button>
+        </form>
+    </div>
+    <div id="media">
+        <h1><b>Images, Audio & Video</b></h1>
+        <img src="none.jpg" alt="Placeholder Image"><br>
+        <audio controls>
+        <source src="none.mp3">
+        </audio><br>
+        <video controls>
+            
+        </video>
+    </div>
+    <div id="tables">
+        <h1><b>Table</b></h1>
+        <table border="">
+            <caption>
+                Sample Table
+            </caption>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Jane</td>
+                <td>30</td>
+            </tr>
+        </table>
+    </div>
+    <div id="semantic">
+        <h1><b>Semantic Elements</b></h1>
+        <article>
+            <b>Article Elements</b>
+            <header>This is an article.</header>
+            <p>this is an aside.</p>
+        <details>
+            <summary>Click to expand</summary><center>          <img src="none.jpg" alt="Figure Image">
+            <figcaption>This is a figcaption</figcaption></center>
+        </details>
+        <footer>Footer content here</footer>
+    </div>
+</body>
+</html>
