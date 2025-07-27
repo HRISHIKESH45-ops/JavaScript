@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cal.css">
+</head>
+
+<body>
+    <div class="f-border">
+        <div class="s-border">
+            <div class="l-border">
+                    <div class="output"> <input type="text" id="result" disabled> </div>
+                    <div class="btns">
+                        <section class="row1">
+                        <button class="btn" onclick="appendValue('1')" >
+                           <span class="btn-text">1</span>
+                        </button>
+                        <button class="btn" onclick="appendValue('2')" >
+                           <span class="btn-text">2</span>
+                        </button>
+                        <button class="btn" onclick="appendValue('3')" >
+                           <span class="btn-text">3</span>
+                        </button>
+                        <button class="btn" onclick="appendValue('/')" >
+                           <span class="btn-text">/</span>
+                        </button>
+                        </section>
+                        <section class="row2">
+                        <button class="btn" onclick="appendValue('4')" >
+                           <span class="btn-text">4</span>
+                        </button>
+                        <button class="btn" onclick="appendValue('5')" >
+                           <span class="btn-text">5</span>
+                        </button>
+                        <button class="btn" onclick="appendValue('6')" >
+                           <span class="btn-text">6</span>
+                        </button>
+                        <button class="btn" onclick="appendValue('*')" >
+                           <span class="btn-text">x</span>
+                        </button>
+                        </section>
+                        <section class="row3">
+                        <button class="btn" onclick="appendValue('7')" >
+                           <span class="btn-text">7</span>
+                        </button>
+                        <button class="btn" onclick="appendValue('8')" >
+                            <span class="btn-text">8</span>
+                        </button>
+                        <button class="btn" onclick="appendValue('9')" >
+                            <span class="btn-text">9</span>
+                        </button>
+                        <button class="btn" onclick="appendValue('-')" >
+                            <span class="btn-text">-</span>
+                        </button>
+                        </section>
+                        <section class="row4">
+                        <button class="btn" onclick="appendValue('0')" >
+                            <span class="btn-text">0</span>
+                        </button>
+                        <button class="btn" onclick="appendValue('.')" >
+                            <span class="btn-text">.</span>
+                        </button>
+                        <button class="btn" onclick="calculate()" >
+                            <span class="btn-text">=</span>
+                        </button>
+                        <button class="btn" onclick="appendValue('+')" >
+                            <span class="btn-text">+</span>
+                        </button>
+                        </section>
+                        <sectioin class="row5">
+                        <button class="btnclear">
+                            <span class="btn-text1" onclick="clearResult()">Clear</span>
+                        </button>
+                        </section>          
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function appendValue(val){
+            document.getElementById('result').value += val;
+        }
+        function calculate(){
+            try{
+                document.getElementById('result').value = 
+                eval(document.getElementById('result').value);
+            } catch(e){
+                document.getElementById('result').value = 'ERROR';
+            }
+        }
+        function clearResult(){
+            document.getElementById('result').value = '';
+        }
+    </script>
+</body>
+
+</html>
