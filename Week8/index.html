@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Clock & Stopwatch | Week 8</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>⏱️ Time Tracker Pro</h1>
+        </header>
+
+        <div class="card clock-card">
+            <h2>Digital Clock</h2>
+            <div id="digitalClock" class="display">00:00:00 AM</div>
+        </div>
+
+        <div class="card stopwatch-card">
+            <h2>Stopwatch</h2>
+            <div id="stopwatchDisplay" class="display">00:00:00.00</div>
+            
+            <div class="controls">
+                <button id="startStopBtn" class="start">Start</button>
+                <button id="resetBtn" disabled>Reset</button>
+            </div>
+        </div>
+
+        <footer>
+            <p>Made by Hrishikesh Ahire | JS Week 8 PBL Project</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

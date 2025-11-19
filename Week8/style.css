@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    /* New background gradient for a sleek, dark look */
+    background: linear-gradient(135deg, #2c3e50, #4ca1af); 
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    background: #1e1e1e; /* Dark background */
+    color: #fff;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+header h1 {
+    color: #00bcd4; /* Cyan color */
+    margin-bottom: 25px;
+}
+
+.card {
+    background: #2b2b2b;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid #3a3a3a;
+}
+
+.card h2 {
+    color: #00bcd4;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+/* Digital Display Styling */
+.display {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 20px 0;
+    color: #e6f7ff; /* Light blue/white */
+    text-shadow: 0 0 10px rgba(0, 188, 212, 0.5);
+}
+
+/* Controls Styling */
+.controls button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.controls button.start {
+    background: #4CAF50; /* Green */
+    color: white;
+}
+
+.controls button.start:hover {
+    background: #43a047;
+    transform: translateY(-1px);
+}
+
+.controls button.stop {
+    background: #F44336; /* Red */
+    color: white;
+}
+
+.controls button.stop:hover {
+    background: #d32f2f;
+    transform: translateY(-1px);
+}
+
+.controls button#resetBtn {
+    background: #00bcd4; /* Cyan */
+    color: #1e1e1e;
+}
+
+.controls button:disabled {
+    background: #555;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 12px;
+    color: #aaa;
+}
