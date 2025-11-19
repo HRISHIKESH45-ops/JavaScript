@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f6d365, #fda085);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    color: #e44d26; /* Orange shade */
+}
+
+/* Input Area Styling */
+.input-area {
+    display: flex;
+    margin-bottom: 25px;
+    gap: 10px;
+}
+
+#taskInput {
+    flex-grow: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+#addTaskBtn {
+    background: #e44d26;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+#addTaskBtn:hover {
+    background: #c0392b;
+}
+
+/* Task List Styling */
+#taskList {
+    list-style: none;
+}
+
+#taskList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    background: #fff8f5;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    transition: background 0.3s;
+}
+
+/* Task Text */
+#taskList li span.task-text {
+    flex-grow: 1;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Completed Task Styling */
+#taskList li.completed {
+    background: #f0f0f0;
+}
+
+#taskList li.completed span.task-text {
+    text-decoration: line-through;
+    color: #888;
+}
+
+/* Action Buttons */
+#taskList button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 10px;
+    transition: transform 0.2s;
+}
+
+#taskList button.delete-btn {
+    color: #e74c3c;
+}
+
+#taskList button.delete-btn:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 12px;
+    color: #555;
+}
