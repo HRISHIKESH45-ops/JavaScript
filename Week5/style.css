@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #83a4d4, #b6fbff);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-container {
+  background: white;
+  width: 90%;
+  max-width: 1000px;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  color: #0077b6;
+}
+
+.search-section {
+  text-align: center;
+  margin: 15px 0;
+}
+
+#searchBar {
+  width: 80%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: #e8f0ff;
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  width: 260px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card h3 {
+  color: #0077b6;
+}
+
+.card p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.sample-card {
+  background: #fff5e6;
+  border: 1px solid #ffc48c;
+}
+
+/* Add New Student Card */
+.add-card {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#openAdd {
+  background: #0077b6;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+#openAdd:hover {
+  background: #023e8a;
+}
+
+.add-section {
+  background: #f8faff;
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 20px;
+  display: none;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: scale(0.95);}
+  to {opacity: 1; transform: scale(1);}
+}
+
+.step {
+  display: none;
+  text-align: center;
+}
+
+.step.active {
+  display: block;
+}
+
+.step input {
+  padding: 10px;
+  width: 80%;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button {
+  background: #0077b6;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #023e8a;
+}
+
+#subjectsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subject-row {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.subject-row input {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 150px;
+}
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+}
