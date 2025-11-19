@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App | Week 10</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>☀️ Weather Forecaster</h1>
+        </header>
+
+        <div class="search-area">
+            <input type="text" id="cityInput" placeholder="Enter city name (e.g., London)" />
+            <button id="searchBtn">Get Weather</button>
+        </div>
+
+        <div id="weatherCard" class="weather-card">
+            <div id="messageDisplay">Enter a city to see the weather.</div>
+            
+            <div id="weatherDetails" style="display: none;">
+                <h2 id="cityName"></h2>
+                <p id="temperature" class="temp"></p>
+                <p id="description" class="desc"></p>
+                <p>Humidity: <span id="humidity"></span>%</p>
+                <p>Wind Speed: <span id="windSpeed"></span> m/s</p>
+            </div>
+        </div>
+
+        <footer>
+            <p>Made by Hrishikesh Ahire | JS Week 10 PBL Project</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
