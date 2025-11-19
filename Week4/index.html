@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Unit Converter | PBL Week 4</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Unit Converter</h1>
+
+    <div class="converter-box">
+      <label for="category">Select Category:</label>
+      <select id="category">
+        <option value="length">Length</option>
+        <option value="weight">Weight</option>
+        <option value="temperature">Temperature</option>
+        <option value="time">Time</option>
+      </select>
+
+      <div class="input-group">
+        <input type="number" id="inputValue" placeholder="Enter value" />
+        <select id="fromUnit"></select>
+        <select id="toUnit"></select>
+      </div>
+
+      <button id="convertBtn">Convert</button>
+
+      <div class="result-box">
+        <h3>Converted Value:</h3>
+        <p id="result">—</p>
+      </div>
+    </div>
+
+    <footer>
+      <p>Made by Hrishikesh Ahire | JS Week 4 PBL Project</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
