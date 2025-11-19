@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    /* Updated background gradient */
+    background: linear-gradient(135deg, #a1c4fd, #c2e9fb); 
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    color: #0077b6; /* Blue shade */
+}
+
+/* Form Group Layout */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #0077b6;
+    outline: none;
+}
+
+/* Error Message Styling */
+.error-message {
+    color: #e74c3c; /* Red color for errors */
+    font-size: 12px;
+    margin-top: 5px;
+    height: 18px; /* Maintain space even when empty */
+}
+
+/* Input error state */
+.form-group.invalid input,
+.form-group.invalid textarea {
+    border-color: #e74c3c;
+}
+
+/* Submit Button */
+#submitBtn {
+    background: #0077b6;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    transition: background 0.3s;
+    width: 100%;
+}
+
+#submitBtn:hover {
+    background: #023e8a;
+}
+
+/* Success Message */
+#successMessage {
+    background: #d4edda;
+    color: #155724;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 12px;
+    color: #555;
+}
