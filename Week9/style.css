@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    /* Bright, cheerful background */
+    background: linear-gradient(135deg, #f5d0a9, #f79d65); 
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    color: #f79d65; 
+}
+
+/* Input Area Styling */
+.input-area {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+    align-items: stretch;
+}
+
+#noteInput {
+    flex-grow: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    resize: vertical;
+}
+
+#addNoteBtn {
+    background: #f79d65;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s;
+    width: 120px;
+    /* Ensure button aligns nicely with the textarea */
+    height: auto; 
+    align-self: stretch;
+}
+
+#addNoteBtn:hover {
+    background: #e68e54;
+}
+
+/* Notes Container */
+.notes-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.note-card {
+    background: #fffbe6; /* Light yellow background for notes */
+    border: 1px solid #ffcc00;
+    padding: 15px;
+    border-radius: 8px;
+    width: calc(33.333% - 10px); /* 3 cards per row */
+    min-width: 200px; /* Minimum size */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.note-card p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    white-space: pre-wrap; /* Preserves line breaks in the text */
+}
+
+.note-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    color: #888;
+    margin-top: 10px;
+}
+
+.note-footer button {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background 0.2s;
+}
+
+.note-footer button:hover {
+    background: #c0392b;
+}
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 12px;
+    color: #555;
+}
